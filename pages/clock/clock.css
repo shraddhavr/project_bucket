@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding:40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(182, 158, 158);
+    }
+.clock{
+    width: 360px;
+    height:400px;
+    background-image: url('/download-removebg-preview.png');
+    background-repeat: no-repeat;
+}
+    
+.main-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.h1{
+    padding:20px;
+    color:black;
+    background-color:antiquewhite;
+    box-shadow: 3px 3px 1px 1px gray;
+    border-radius:40px;
+    
+}
+
+.container {
+    height: 400px;
+    padding: 10px;
+    color: #1d2223;
+    display: inline-block;
+
+}
+
+#clock {
+    font-size: 30px;
+    font-family: 'digital-clock-font';
+    letter-spacing: 5px;
+    box-shadow: 2px 2px 0px 0px grey;
+    padding:10px;
+    color:rgb(9, 8, 8);
+    background-color: aqua;
+    width:250px;
+    margin-left:40px;
+}
+#clock:hover{
+    font-size:35px;
+    width:300px;
+    font-family: cursive;
+    cursor: pointer;
+    background-color:rgb(20, 17, 20);
+    color:azure;
+    border:2px double white;
+}
+
+@font-face {
+    font-family: 'digital-clock-font';
+    src: url('./Technology-Bold.ttf');
+}
