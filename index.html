@@ -12,17 +12,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Project Bucket</title>
-    
+
 </head>
 
 <body>
 
     <!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg nav-design">
 
         <div class="container-fluid">
 
-            <a class="navbar-brand" href="#">Project Bucket</a>
+            <a class="navbar-brand text-white" href="#">Project Bucket</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -35,51 +35,52 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
                     </li>
 
                     <li class="nav-item dropdown">
 
-                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Mini Projects
+                        <a class="nav-link active dropdown-toggle text-white" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
                         </a>
 
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Rock Paper Scissors</a></li>
-                            <li><a class="dropdown-item" href="#">Random Quote Generator</a></li>
-                            <li><a class="dropdown-item" href="#">Password Generator</a></li>
-                            <li><a class="dropdown-item" href="#">Music Player</a></li>
-                            <li><a class="dropdown-item" href="#">Digital Clock</a></li>
-                            <li><a class="dropdown-item" href="#">Tip Calculator</a></li>
-                            <li><a class="dropdown-item" href="#">Typing Speed Test Game</a></li>
-                            <li><a class="dropdown-item" href="#">Tell me a Joke</a></li>
-                            <li><a class="dropdown-item" href="#">To do List</a></li>
-                            <li><a class="dropdown-item" href="#">Calculator</a></li>
-                            <li><a class="dropdown-item" href="#">Hackerman</a></li>
-                            <li><a class="dropdown-item" href="#">Alarm Clock</a></li>
+                            <li><a class="dropdown-item"
+                                    href="./pages/random_quote_generator/random_quote_generator.html"
+                                    target="_blank">Random Quote Generator</a></li>
+                            <li><a class="dropdown-item" href="./pages/password_generator/password_generator.html"
+                                    target="_blank">Password Generator</a></li>
+                            <li><a class="dropdown-item" href="./pages/music_player/music_player.html"
+                                    target="_blank">Music Player</a></li>
+                            <li><a class="dropdown-item" href="./pages/digital_clock/digital_clock.html"
+                                    target="_blank">Digital Clock</a></li>
+                            <li><a class="dropdown-item" href="./pages/tip_calculator/tip_calculator.html"
+                                    target="_blank">Tip Calculator</a></li>
+                            <li><a class="dropdown-item" href="./pages/tell_me_a_joke/tell_me_a_joke.html"
+                                    target="_blank">Calculator</a></li>
+                            <li><a class="dropdown-item" href="./pages/tell_me_a_joke/tell_me_a_joke.html"
+                                    target="_blank">Rock Paper Scissor</a></li>
+                            <li><a class="dropdown-item" href="./pages/calculator/calculator.html"
+                                    target="_blank">Login Form</a></li>
 
                         </ul>
 
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Team</a>
+                        <a class="nav-link active text-white" href="#team">Team</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Contact</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Login</a>
+                        <a class="nav-link active text-white" href="#contact">Contact</a>
                     </li>
 
                 </ul>
 
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-light" type="submit">Search</button>
                 </form>
 
             </div>
@@ -88,162 +89,312 @@
     </nav>
 
     <!--Landing Page-->
-    <div class="row d-flex justify-content-center mt-4">
-        <div class="col m-5">
-            <img src="./assest/jsprojects.jpg" class="img-thumbnail border-0">
+    <section>
+        <div class="row d-flex justify-content-center team-container">
+            <div class="col-lg-6 col-md-12">
+                <img src="./assest/home-pic.jpg" class="img-thumbnail border-0" id="home">
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+
+                <p class="text-end fs-1 text-center text-white"><b>Project Bucket</b></p>
+                <p class="text-center text-white mt-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias similique harum omnis quo odio numquam quibusdam tempore quae.</p>
+                
+                <div class="row d-flex justify-content-center">
+                    <button type="button" class="btn btn-sm m-2 border-button col-3">Projects</button>
+                    <button type="button" class="btn btn-sm m-2 border-button col-3">View More</button>
+                </div>
+            </div>
         </div>
-        <div class="col text-center w-25 mt-5">
-            <p class="text-end fs-1 text-center"><b>Project Bucket</b></p>
-            <p class="text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias similique harum
-                omnis quo odio numquam quibusdam tempore quae, aut voluptates cumque debitis nihil voluptatem aliquam
-                corrupti minima cum molestiae perferendis.</p>
-            <button type="button" class="btn btn-outline-secondary mt-1">Secondary</button>
-            <button type="button" class="btn btn-outline-warning ms-5 mt-1">Secondary</button>
-        </div>
-    </div>
+    </section>
 
     <!--Cards-->
-    <div class="row d-flex justify-content-center align-items-center">
+    <h3 class="team-title">Projects</h3>
+    <section>
+        <div class="row d-flex justify-content-center align-items-center">
 
-        <!--Rock Paper Scissors-->
-        <div class="card m-5" style="width: 30rem;">
-            <div class="card-body">
-                <h5 class="card-title">Rock Paper Scissor</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="" target=" " class="btn btn-primary">Go</a>
+            <!--Random Quote Generator-->
+            <div class="card m-5 team-container card-design" style="width: 25rem;">
+                <div class="card-body team-content">
+                    <h5 class="card-title">Random Quote Generator</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="./pages/random_quote_generator/random_quote_generator.html" target=" "
+                        class="btn border-white w-50 text-white card-btn-hover">Go</a>
+                </div>
             </div>
-        </div>
 
-        <!--Random Quote Generator-->
-        <div class="card m-5" style="width: 30rem;">
-            <div class="card-body">
-                <h5 class="card-title">Random Quote Generator</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="./pages/quote_generator/quote_generator.html" target=" " class="btn btn-primary">Go</a>
+            <!--Password Generator-->
+            <div class="card m-5 team-container card-design" style="width: 25rem;">
+                <div class="card-body  team-content">
+                    <h5 class="card-title">Password Generator</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="./pages/password_generator/password_generator.html" target=" "
+                        class="btn border-white w-50 text-white card-btn-hover">Go</a>
+                </div>
             </div>
-        </div>
 
-        <!--Password Generator-->
-        <div class="card m-5" style="width: 30rem;">
-            <div class="card-body">
-                <h5 class="card-title">Password Generator</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Go</a>
+            <!--Music Player-->
+            <div class="card m-5 team-container card-design" style="width: 25rem;">
+                <div class="card-body  team-content">
+                    <h5 class="card-title">Music Player</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="./pages/music_player/music_player.html" target=" " class="btn border-white w-50 text-white card-btn-hover">Go</a>
+                </div>
             </div>
-        </div>
 
-        <!--Music Player-->
-        <div class="card m-5" style="width: 30rem;">
-            <div class="card-body">
-                <h5 class="card-title">Music Player</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Go</a>
+            <!--Digital Clock-->
+            <div class="card m-5 team-container card-design" style="width: 25rem;">
+                <div class="card-body  team-content">
+                    <h5 class="card-title">Digital Clock</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="./pages/digital_clock/digital_clock.html" target=" " class="btn border-white w-50 text-white card-btn-hover">Go</a>
+                </div>
             </div>
-        </div>
 
-        <!--Digital Clock-->
-        <div class="card m-5" style="width: 30rem;">
-            <div class="card-body">
-                <h5 class="card-title">Digital Clock</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Go</a>
+            <!--Tip Calculator-->
+            <div class="card m-5 team-container card-design" style="width: 25rem;">
+                <div class="card-body  team-content">
+                    <h5 class="card-title">Tip Calculator</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="./pages/tip_calculator/tip_calculator.html" target=" " class="btn border-white w-50 text-white card-btn-hover">Go</a>
+                </div>
             </div>
-        </div>
 
-        <!--Tip Calculator-->
-        <div class="card m-5" style="width: 30rem;">
-            <div class="card-body">
-                <h5 class="card-title">Tip Calculator</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Go</a>
+            <!--Calculator-->
+            <div class="card m-5 team-container card-design" style="width: 25rem;">
+                <div class="card-body  team-content">
+                    <h5 class="card-title">Calculator</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="./pages/calculator/calculator.html" target=" " class="btn border-white w-50 text-white card-btn-hover">Go</a>
+                </div>
             </div>
-        </div>
 
-        <!--Typing Speed Test Game-->
-        <div class="card m-5" style="width: 30rem;">
-            <div class="card-body">
-                <h5 class="card-title">Typing Speed Test Game</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="./pages/quote_generator/quote_generator.html" target=" " class="btn btn-primary">Go</a>
+            <!--Rock Paper Scissors-->
+            <div class="card m-5 team-container card-design" style="width: 25rem;">
+                <div class="card-body  team-content">
+                    <h5 class="card-title">Rock Paper Scissor</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="./pages/rock_paper_scissor/rock_paper_scissor.html" target=" "
+                        class="btn border-white w-50 text-white card-btn-hover">Go</a>
+                </div>
             </div>
-        </div>
 
-        <!--Tell me a Joke-->
-        <div class="card m-5" style="width: 30rem;">
-            <div class="card-body">
-                <h5 class="card-title">Tell me a Joke</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="" target=" " class="btn btn-primary">Go</a>
+            <!--Login Form-->
+            <div class="card m-5 team-container card-design" style="width: 25rem;">
+                <div class="card-body  team-content">
+                    <h5 class="card-title">Login Form</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="" target=" "
+                        class="btn border-white w-50 text-white card-btn-hover">Go</a>
+                </div>
             </div>
-        </div>
 
-        <!--To do List-->
-        <div class="card m-5" style="width: 30rem;">
-            <div class="card-body">
-                <h5 class="card-title">Todo List</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="./pages/quote_generator/quote_generator.html" target=" " class="btn btn-primary">Go</a>
-            </div>
-        </div>
 
-        <!--Hackerman-->
-        <div class="card m-5" style="width: 30rem;">
-            <div class="card-body">
-                <h5 class="card-title">Hackerman</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="./pages/quote_generator/quote_generator.html" target=" " class="btn btn-primary">Go</a>
-            </div>
         </div>
-
-        <!--Alarm Clock-->
-        <div class="card m-5" style="width: 30rem;">
-            <div class="card-body">
-                <h5 class="card-title">Alarm Clock</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="./pages/quote_generator/quote_generator.html" target=" " class="btn btn-primary">Go</a>
-            </div>
-        </div>
-
-        <!--Calculator-->
-        <div class="card m-5" style="width: 30rem;">
-            <div class="card-body">
-                <h5 class="card-title">Calculator</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="./pages/quote_generator/quote_generator.html" target=" " class="btn btn-primary">Go</a>
-            </div>
-        </div>
-
-    </div>
+    </section>
 
     <!--Our Team-->
+    <h3 class="team-title" id="team">Our Team</h3>
+    <section>
+
+        <div class="team-container">
+            <div class="team-card">
+                <div class="team-content">
+                    <div class="imgbx"><img src="./assest/profile-pics/mukesh-profile.jpg"></div>
+                    <div class="contentbox">
+                        <h3>Mukesh Pimpalkar<br><span>Web Developer</span></h3>
+                    </div>
+                </div>
+            </div>
+            <ul class="sci">
+                <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+            </ul>
+        </div>
+
+        <div class="team-container">
+            <div class="team-card">
+                <div class="team-content">
+                    <div class="imgbx"><img src="./assest/profile-pics/sakshi.png"></div>
+                    <div class="contentbox">
+                        <h3>Aniket Tikkal<br><span>Web Developer</span></h3>
+                    </div>
+                </div>
+            </div>
+            <ul class="sci">
+                <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+            </ul>
+        </div>
+
+        <div class="team-container">
+            <div class="team-card">
+                <div class="team-content">
+                    <div class="imgbx"><img src="./assest/profile-pics/mukesh-profile.jpg"></div>
+                    <div class="contentbox">
+                        <h3>Yash<br><span>Web Developer</span></h3>
+                    </div>
+                </div>
+            </div>
+            <ul class="sci">
+                <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+            </ul>
+        </div>
+
+        <div class="team-container">
+            <div class="team-card">
+                <div class="team-content">
+                    <div class="imgbx"><img src="./assest/profile-pics/sakshi.png"></div>
+                    <div class="contentbox">
+                        <h3>Shradhha<br><span>Web Developer</span></h3>
+                    </div>
+                </div>
+            </div>
+            <ul class="sci">
+                <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+            </ul>
+        </div>
+
+        <div class="team-container">
+            <div class="team-card">
+                <div class="team-content">
+                    <div class="imgbx"><img src="./assest/profile-pics/mukesh-profile.jpg"></div>
+                    <div class="contentbox">
+                        <h3>Aarti<br><span>Web Developer</span></h3>
+                    </div>
+                </div>
+            </div>
+            <ul class="sci">
+                <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+            </ul>
+        </div>
+
+        <div class="team-container">
+            <div class="team-card">
+                <div class="team-content">
+                    <div class="imgbx"><img src="./assest/profile-pics/sakshi.png"></div>
+                    <div class="contentbox">
+                        <h3>Sakshi Rajurkar<br><span>Web Developer</span></h3>
+                    </div>
+                </div>
+            </div>
+            <ul class="sci">
+                <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+            </ul>
+        </div>
+
+
+    </section>
 
     <!--Contact Us-->
+    <h3 class="team-title" id="contact">Contact Us</h3>
+    <section></section>
+
+    <br><br>
 
     <!--Footer-->
+        <div class="footer-section">
+
+            <div class="row team-container ">
+
+                <div class="links col-3">
+
+                    <h2>Quick-Links</h2>
+                    <br>
+                    <div class="sub-links">
+                        <a href="./index.html" class="">Home</a>
+                        <br>
+                        <a href="" class="">Projects</a>
+                        <br>
+                        <a href="#about-us" class="">Team</a>
+                        <br>
+                        <a href="" class="">Contact</a>
+                    </div>
+                </div>
+
+                <div class="links col-3">
+
+                    <h2>Project Bucket</h2>
+                    <br>
+                    <div class="sub-links">
+                        <a href="./pages/typing_speed/typing_speed.html">Random Quote Generator</a>
+                        <br>
+                        <a href="./pages/password_generator/password_generator.html">Password Generator</a>
+                        <br>
+                        <a href="./pages/music_list/music_list.html">Music Player</a>
+                        <br>
+                        <a href="./pages/clock/clock.html">Digital Clock</a>
+                        <br>
+                        <a href="./pages/tip_calculator/tip_calculator.html">Tip Calculator</a>
+                        <br>
+                        <a href="./pages/clock/clock.html">Calculator</a>
+                        <br>
+                        <a href="./pages/tip_calculator/tip_calculator.html">Rock Paper Scissors</a>
+                        <br>
+                        <a href="./pages/tip_calculator/tip_calculator.html">Login Form</a>
+                    </div>
+                </div>
+
+                <div class="links col-3">
+
+                    <h2>Contact Info</h2>
+                    <br>
+                    <div class="sub-links">
+                        <a href="">8806862672</a>
+                        <br>
+                        <a href="" target=" ">pimpalkarmukesh07@gmail.com</a>
+                    </div>
+                </div>
+
+                <!--Social Handle-->
+                <div class="social-menu links col-3">
+
+                    <ul>
+                        <li><a href="" target="_blank"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li><a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li><a href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
 
     <!--Bootstrap Script File-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -263,6 +414,6 @@
 <!--Project 3 - Music Player [Aniket]-->
 <!--Project 4 - Digital Clock [Shradhha]-->
 <!--Project 5 - Tip Calculator [Aarti]-->
-<!--Project 6 -  [Sakshi]-->
-
-<!--Project 5 - Typing Speed Test Game [Mukesh]-->
+<!--Project 6 - Calculator [Sakshi]-->
+<!--Project 7 - Rock Paper Scissor [Mukesh]-->
+<!--Project 8 - login Form [Aniket]-->

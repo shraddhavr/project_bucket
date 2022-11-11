@@ -1,0 +1,265 @@
+.border-button{
+    color: #fff;
+    border: #fff 1px solid;
+    font-weight: 600;
+}
+
+.border-button:hover{
+    border: #fff 1px solid;
+    background: #fff;
+    color: #000;
+
+}
+
+.card-design{
+    background: rgb(255, 255, 255, 0.05);
+    color: #fff;
+    backdrop-filter: blur(10px);
+}
+
+.card-btn-hover:hover{
+    font-weight: 600;
+    background: rgba(211, 211, 211, 0.185);
+}
+
+/*******Team*******/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-design{
+    background: #161623;
+
+}
+
+.team-title{
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #161623;
+    min-height: 100vh;
+    position: relative;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00, #f0f);
+    clip-path: circle(30% at right 70%);
+}
+
+section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3, #e91e63);
+    clip-path: circle(20% at 10% 10%);
+}
+
+.team-container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.team-container .team-card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: rgb(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.team-container .team-card .team-content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.team-container .team-card:hover .team-content{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.team-container .team-card .team-content .imgbx{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contentbox{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.contentbox h3{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.sci{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+
+}
+
+.sci li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.sci li a{
+    color: #fff;
+    font-size: 24px;
+}
+
+
+/*******Footer*******/
+.footer-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #161623;
+    position: relative;
+}
+
+.footer {
+    color: white;
+}
+
+.links {
+    width: 300px;
+    height: 320px;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links h2{
+    font-size: 20px;
+    color: #fff;
+}
+
+.sub-links{
+    width: 200px;
+    height: 200px;
+}
+
+.sub-links a{
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(110, 109, 109, 0.979);
+    text-decoration: none;
+}
+
+.social-menu{
+    padding: 5px;
+    padding-top: 50px;
+}
+
+.social-menu ul {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    display: flex;
+
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 auto;
+}
+
+.social-menu ul li .fab{
+    font-size: 30px;
+    line-height: 50px;
+    transition: .3px;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 0 5px 4px rgba(95, 94, 94, 0.767);
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: rgba(0,0,0,0.829);
+}
+
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #0077b5;
+}
+
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #e4405f;
+}
+
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #002E6E;
+}
