@@ -262,7 +262,6 @@ section::after{
 
 .social-menu ul li:nth-child(4) a:hover{
     background-color: #002E6E;
-<<<<<<< HEAD
 }
 
 /*About Us*/
@@ -372,10 +371,4 @@ section::after{
 
 .about-social-menu ul li:nth-child(4) a:hover{
     background-color: #002E6E;
-}
-
-.fa{
- 
-=======
->>>>>>> 98dc9cd87f7baa9b93f1ef0c56c7a131eeabadb1
 }
