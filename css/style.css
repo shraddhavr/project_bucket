@@ -263,3 +263,112 @@ section::after{
 .social-menu ul li:nth-child(4) a:hover{
     background-color: #002E6E;
 }
+
+/*About Us*/
+
+#heading {
+    text-align: center;
+}
+
+.about-card {
+    background-color: rgb(231, 231, 219);
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 350px;
+    height: 380px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+    display: inline-block;
+    background:rgba(255, 255, 255, 0.25);
+    box-shadow:0 1px 2px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter:blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 5px;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+.about-card:hover {
+    box-shadow: 0px 0px 3px 2px rgb(179, 171, 171);
+}
+
+.profile-img {
+    margin-top: 7px;
+    width: 130px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 3px rgba(95, 94, 94, 0.767);
+    padding: 10px;
+}
+
+.name {
+    font-size: 25px;
+
+}
+
+.about-social-menu{
+    width: 320px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 11px;
+}
+
+.about-social-menu ul {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    display: flex;
+
+}
+
+.about-social-menu ul li{
+    list-style: none;
+    margin: 0 auto;
+}
+
+.about-social-menu ul li .fab{
+    font-size: 30px;
+    line-height: 50px;
+    transition: .3px;
+    color: #000;
+}
+
+.about-social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.about-social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 0 5px 4px rgba(95, 94, 94, 0.767);
+}
+
+.about-social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.about-social-menu ul li:nth-child(1) a:hover{
+    background-color: rgba(0,0,0,0.829);
+}
+
+.about-social-menu ul li:nth-child(2) a:hover{
+    background-color: #0077b5;
+}
+
+.about-social-menu ul li:nth-child(3) a:hover{
+    background-color: #e4405f;
+}
+
+.about-social-menu ul li:nth-child(4) a:hover{
+    background-color: #002E6E;
+}
