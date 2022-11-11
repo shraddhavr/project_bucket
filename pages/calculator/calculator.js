@@ -25,4 +25,3 @@ function on() {
 function off() {
     document.querySelector("input").disabled;
 }
-

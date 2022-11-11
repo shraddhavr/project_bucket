@@ -42,7 +42,7 @@ genBtn.addEventListener("click", () => {
 
   const password = generatePassword(passwordLength);
   passwordShow.innerHTML = password;
- 
+
 });
 
 
