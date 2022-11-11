@@ -8,17 +8,17 @@ const container = document.querySelector('.container');
 const animateCircles = document.querySelector('.animate-circles');
 
 
-form.addEventListener('submit', (e) => {  
+form.addEventListener('submit', (e) => {
 
     e.preventDefault();
 
-  // Get values of form fields and assign to new variables
+    // Get values of form fields and assign to new variables
     const usernameValue = username.value;
     const emailValue = email.value;
     const passwordValue = password.value;
     const password2Value = password2.value;
-  
-  //conditional statements to check if form value is valid ..... If form value is not valid an error function is triggered but if it is valid a success function is triggered
+
+    //conditional statements to check if form value is valid ..... If form value is not valid an error function is triggered but if it is valid a success function is triggered
 
     if (usernameValue === '') {
         errorMessage(username, "Username is empty");
@@ -48,7 +48,7 @@ form.addEventListener('submit', (e) => {
         successMessage(password2);
     }
 
-// conditional statement to check if all values are valid so the bubbles can appear
+    // conditional statement to check if all values are valid so the bubbles can appear
     if (username.parentElement.classList.contains('success') && email.parentElement.classList.contains('success') && password.parentElement.classList.contains('success') && password2.parentElement.classList.contains('success')) {
 
         container.classList.add('complete');
@@ -86,7 +86,7 @@ function successMessage(value) {
     }
 }
 
- 
+
 
 function validateEmail(email) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

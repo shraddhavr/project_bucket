@@ -6,8 +6,37 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #161623;
+    min-height: 100vh;
+    position: relative;
 }
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00, #f0f);
+    clip-path: circle(30% at right 70%);
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3, #e91e63);
+    clip-path: circle(20% at 10% 10%);
+}
+
 
 h2,
 p {
@@ -27,7 +56,9 @@ main {
     border-radius: 5px;
     width: 400px;
     max-width: 100%;
-    box-shadow: 0 0 10px 1px rgba(61, 61, 61, 0.19), 0 0 15px 1px rgba(63, 63, 63, 0.23);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+
 }
 
 .container.complete {
@@ -89,15 +120,19 @@ h2 {
     0% {
         transform: translateX(5px);
     }
+
     25% {
         transform: translateX(-5px);
     }
+
     50% {
         transform: translateX(5px);
     }
+
     75% {
         transform: translateX(-5px);
     }
+
     100% {
         transform: translateX(0px);
     }
@@ -165,7 +200,7 @@ button:hover {
     visibility: hidden;
     position: fixed;
     top: 45%;
-    left: 41%;
+    left: 10%;
     background-color: #fff;
     padding: 40px 20px;
     border-radius: 5px;
@@ -186,12 +221,15 @@ button:hover {
         transform: translateY(0);
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     75% {
         opacity: 1;
     }
+
     100% {
         transform: translateY(-100vh);
         opacity: 0;
