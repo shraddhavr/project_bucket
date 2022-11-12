@@ -1,0 +1,124 @@
+/*styles.css*/
+
+body {
+    background: #333 url(./../../assest/food8.jpeg) center center no-repeat;
+    background-size: cover;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #161623;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00, #f0f);
+    clip-path: circle(30% at right 70%);
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3, #e91e63);
+    clip-path: circle(20% at 10% 10%);
+}
+
+
+#container {
+    width: 500px;
+    padding: 50px;
+    box-sizing: border-box;
+    background: url(./../../assest/paper-pattern.jpg)top left repeat;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    border-bottom: solid 1px #ddd;
+
+}
+
+form {
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 25px 0;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    padding: 8px;
+    margin: 10px 0;
+}
+
+form input[type="text"] {
+    width: 90px;
+}
+
+button {
+    background: #fff;
+    color: #161623;
+    border-bottom: solid 4px #222;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+button:hover {
+    background: #161623;
+    color: #fff;
+}
+
+button:active {
+
+    position: relative;
+    top: 3px;
+}
+
+#totalTip {
+
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+#totalTip:before {
+
+    content: "Tip amount";
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+
+#totalTip sup {
+
+    font-size: 24px;
+    top: -18px;
+}
+
+#totalTip small {
+
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
